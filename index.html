@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tony | Cyber Security Analyst</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="terminal-text">
+        <span class="prompt">root@tony:~$</span>
+        <span class="cmd" id="preloader-cmd"></span>
+        <span class="cursor-blink">_</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="bracket">[</span>TONY<span class="bracket">]</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="matrix-bg" id="matrix-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-shield-halved"></i>
+        <span>Cyber Security Analyst</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="glitch" data-text="Tony">Tony</span>
+      </h1>
+      <h2 class="hero-title">
+        <span class="typed-text" id="typed-text"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-tagline">
+        Passionate about <span class="accent">ethical hacking</span>, <span class="accent">network security</span>,
+        and <span class="accent">vulnerability assessment</span>.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-terminal"></i> View My Work
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Get In Touch
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="10">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="8">0</span>
+          <span class="stat-label">Tools Mastered</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// about_me</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap">
+          <div class="avatar-frame">
+            <div class="avatar-inner">
+              <img src="assets/images/profile.jpg" alt="Tony - Cyber Security Analyst" class="profile-photo">
+            </div>
+            <div class="avatar-ring ring1"></div>
+            <div class="avatar-ring ring2"></div>
+            <div class="avatar-status">
+              <span class="status-dot"></span> Available for Internship
+            </div>
+          </div>
+          <div class="about-quick-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>East Africa</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Cybersecurity Student</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-code-branch"></i>
+              <span>Open to Opportunities</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+              <span class="t-title">about_tony.sh</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="t-prompt">$</span> <span class="t-cmd">cat about.txt</span></p>
+              <p class="t-output">
+                Hi, I'm <strong>Tony</strong> — a dedicated and curious cybersecurity enthusiast currently
+                building a strong foundation in offensive and defensive security practices. I am passionate
+                about understanding how systems can be compromised and how to defend them effectively.
+              </p>
+              <p class="t-output">
+                My journey into cybersecurity started with a fascination for how networks communicate and
+                how vulnerabilities can be discovered and patched. I actively practice in lab environments
+                using tools like <span class="accent">Kali Linux</span>, <span class="accent">Metasploit</span>,
+                and <span class="accent">Wireshark</span> to sharpen my skills in penetration testing and
+                network analysis.
+              </p>
+              <p class="t-output">
+                I am actively seeking an <strong>internship or attachment</strong> opportunity where I can
+                apply my skills, contribute to real-world security challenges, and grow alongside experienced
+                professionals in the field.
+              </p>
+              <p><span class="t-prompt">$</span> <span class="cursor-blink">_</span></p>
+            </div>
+          </div>
+          <div class="about-skills-preview">
+            <span class="skill-tag"><i class="fas fa-network-wired"></i> Network Security</span>
+            <span class="skill-tag"><i class="fas fa-bug"></i> Penetration Testing</span>
+            <span class="skill-tag"><i class="fas fa-search"></i> Vulnerability Scanning</span>
+            <span class="skill-tag"><i class="fab fa-linux"></i> Linux / Kali Linux</span>
+            <span class="skill-tag"><i class="fas fa-map"></i> Nmap</span>
+            <span class="skill-tag"><i class="fas fa-fish"></i> Wireshark</span>
+            <span class="skill-tag"><i class="fas fa-skull-crossbones"></i> Metasploit</span>
+            <span class="skill-tag"><i class="fas fa-cogs"></i> n8n Automation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// skill_set</span>
+        <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-categories">
+
+        <!-- Offensive Security -->
+        <div class="skill-category">
+          <h3 class="category-title"><i class="fas fa-crosshairs"></i> Offensive Security</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item" data-skill="Penetration Testing" data-level="75">
+              <div class="skill-info"><span>Penetration Testing</span><span class="skill-pct">75%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target: 75%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="Metasploit Framework" data-level="70">
+              <div class="skill-info"><span>Metasploit Framework</span><span class="skill-pct">70%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target: 70%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="Ethical Hacking" data-level="72">
+              <div class="skill-info"><span>Ethical Hacking</span><span class="skill-pct">72%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target: 72%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Network & Recon -->
+        <div class="skill-category">
+          <h3 class="category-title"><i class="fas fa-network-wired"></i> Network & Recon</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item" data-skill="Nmap" data-level="85">
+              <div class="skill-info"><span>Nmap</span><span class="skill-pct">85%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target: 85%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="Wireshark" data-level="80">
+              <div class="skill-info"><span>Wireshark</span><span class="skill-pct">80%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target: 80%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="Network Security" data-level="78">
+              <div class="skill-info"><span>Network Security</span><span class="skill-pct">78%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target: 78%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Systems & Tools -->
+        <div class="skill-category">
+          <h3 class="category-title"><i class="fab fa-linux"></i> Systems & Tools</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item" data-skill="Linux / Kali Linux" data-level="82">
+              <div class="skill-info"><span>Linux / Kali Linux</span><span class="skill-pct">82%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target: 82%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="Vulnerability Scanning" data-level="76">
+              <div class="skill-info"><span>Vulnerability Scanning</span><span class="skill-pct">76%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target: 76%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="Firewall Configuration" data-level="68">
+              <div class="skill-info"><span>Firewall Configuration</span><span class="skill-pct">68%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target: 68%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Automation & SOAR -->
+        <div class="skill-category">
+          <h3 class="category-title"><i class="fas fa-cogs"></i> Automation & SOAR</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item" data-skill="n8n Automation" data-level="70">
+              <div class="skill-info"><span>n8n Automation</span><span class="skill-pct">70%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target: 70%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="Workflow Orchestration" data-level="68">
+              <div class="skill-info"><span>Workflow Orchestration</span><span class="skill-pct">68%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target: 68%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="Security Automation" data-level="65">
+              <div class="skill-info"><span>Security Automation</span><span class="skill-pct">65%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--target: 65%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tool Cards -->
+      <div class="tool-cards">
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-map"></i></div>
+          <span>Nmap</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-fish"></i></div>
+          <span>Wireshark</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-skull-crossbones"></i></div>
+          <span>Metasploit</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fab fa-linux"></i></div>
+          <span>Kali Linux</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-fire-flame-curved"></i></div>
+          <span>Burp Suite</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-shield-halved"></i></div>
+          <span>Snort IDS</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-terminal"></i></div>
+          <span>Bash Scripting</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-database"></i></div>
+          <span>SQLMap</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon"><i class="fas fa-cogs"></i></div>
+          <span>n8n</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// projects</span>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-img-placeholder">
+              <i class="fas fa-map-location-dot"></i>
+              <span>Nmap Scan</span>
+            </div>
+            <div class="project-overlay">
+              <span class="project-status active">Completed</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Vulnerability Scan Using Nmap</h3>
+            <p class="project-desc">
+              Conducted a comprehensive network vulnerability assessment on a controlled lab environment.
+              Identified open ports, running services, and potential attack vectors using Nmap's scripting engine (NSE).
+            </p>
+            <div class="project-tools">
+              <span class="tool-badge"><i class="fas fa-map"></i> Nmap</span>
+              <span class="tool-badge"><i class="fab fa-linux"></i> Kali Linux</span>
+              <span class="tool-badge"><i class="fas fa-terminal"></i> Bash</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link"><i class="fab fa-github"></i> View Report</a>
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Details</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-img-placeholder">
+              <i class="fas fa-fish"></i>
+              <span>Wireshark Analysis</span>
+            </div>
+            <div class="project-overlay">
+              <span class="project-status active">Completed</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Network Traffic Analysis with Wireshark</h3>
+            <p class="project-desc">
+              Captured and analyzed live network packets to identify suspicious traffic patterns, unencrypted
+              credentials, and protocol anomalies. Documented findings in a structured security report.
+            </p>
+            <div class="project-tools">
+              <span class="tool-badge"><i class="fas fa-fish"></i> Wireshark</span>
+              <span class="tool-badge"><i class="fas fa-network-wired"></i> TCP/IP</span>
+              <span class="tool-badge"><i class="fas fa-filter"></i> Packet Analysis</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link"><i class="fab fa-github"></i> View Report</a>
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Details</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card featured">
+          <div class="featured-badge"><i class="fas fa-star"></i> Featured</div>
+          <div class="project-img">
+            <div class="project-img-placeholder">
+              <i class="fas fa-skull-crossbones"></i>
+              <span>Metasploitable Lab</span>
+            </div>
+            <div class="project-overlay">
+              <span class="project-status active">Completed</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Metasploitable Lab Penetration Testing</h3>
+            <p class="project-desc">
+              Performed a full penetration test against the Metasploitable 2 vulnerable machine. Exploited
+              multiple vulnerabilities including FTP, SSH, and web application flaws using Metasploit modules
+              and manual techniques.
+            </p>
+            <div class="project-tools">
+              <span class="tool-badge"><i class="fas fa-skull-crossbones"></i> Metasploit</span>
+              <span class="tool-badge"><i class="fas fa-map"></i> Nmap</span>
+              <span class="tool-badge"><i class="fab fa-linux"></i> Kali Linux</span>
+              <span class="tool-badge"><i class="fas fa-bug"></i> Exploitation</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link"><i class="fab fa-github"></i> View Report</a>
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Details</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-img">
+            <div class="project-img-placeholder">
+              <i class="fas fa-fire-flame-curved"></i>
+              <span>Firewall Config</span>
+            </div>
+            <div class="project-overlay">
+              <span class="project-status active">Completed</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Firewall Configuration Lab</h3>
+            <p class="project-desc">
+              Designed and implemented firewall rules using iptables on a Linux system to filter inbound
+              and outbound traffic. Tested rule effectiveness against simulated attack scenarios and
+              documented the security policy.
+            </p>
+            <div class="project-tools">
+              <span class="tool-badge"><i class="fas fa-fire-flame-curved"></i> iptables</span>
+              <span class="tool-badge"><i class="fab fa-linux"></i> Linux</span>
+              <span class="tool-badge"><i class="fas fa-shield-halved"></i> Network Defense</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link"><i class="fab fa-github"></i> View Report</a>
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Details</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS SECTION ===== -->
+  <section id="certifications" class="certifications section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// certifications</span>
+        <h2 class="section-title">Certs & <span class="accent">Training</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <div class="cert-body">
+            <h3 class="cert-title">Google Cybersecurity Certificate</h3>
+            <p class="cert-issuer"><i class="fab fa-google"></i> Google / Coursera</p>
+            <p class="cert-desc">Foundations of cybersecurity, network security, Linux, SQL, and security tools.</p>
+            <div class="cert-tags">
+              <span>Network Security</span>
+              <span>Linux</span>
+              <span>SIEM</span>
+            </div>
+          </div>
+          <div class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="cert-body">
+            <h3 class="cert-title">TryHackMe – Pre-Security Path</h3>
+            <p class="cert-issuer"><i class="fas fa-skull"></i> TryHackMe</p>
+            <p class="cert-desc">Hands-on labs covering networking, web fundamentals, and Linux basics for security.</p>
+            <div class="cert-tags">
+              <span>Hands-on Labs</span>
+              <span>Networking</span>
+              <span>Web Security</span>
+            </div>
+          </div>
+          <div class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-bug"></i></div>
+          <div class="cert-body">
+            <h3 class="cert-title">TryHackMe – Jr Penetration Tester</h3>
+            <p class="cert-issuer"><i class="fas fa-skull"></i> TryHackMe</p>
+            <p class="cert-desc">Penetration testing methodology, exploitation techniques, and post-exploitation.</p>
+            <div class="cert-tags">
+              <span>Pen Testing</span>
+              <span>Exploitation</span>
+              <span>Metasploit</span>
+            </div>
+          </div>
+          <div class="cert-status in-progress"><i class="fas fa-spinner fa-spin"></i> In Progress</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+          <div class="cert-body">
+            <h3 class="cert-title">Cisco Networking Essentials</h3>
+            <p class="cert-issuer"><i class="fas fa-server"></i> Cisco NetAcad</p>
+            <p class="cert-desc">TCP/IP fundamentals, subnetting, routing protocols, and network troubleshooting.</p>
+            <div class="cert-tags">
+              <span>TCP/IP</span>
+              <span>Routing</span>
+              <span>Subnetting</span>
+            </div>
+          </div>
+          <div class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-terminal"></i></div>
+          <div class="cert-body">
+            <h3 class="cert-title">Ethical Hacking Essentials (EHE)</h3>
+            <p class="cert-issuer"><i class="fas fa-graduation-cap"></i> EC-Council / Coursera</p>
+            <p class="cert-desc">Introduction to ethical hacking, footprinting, scanning, enumeration, and exploitation.</p>
+            <div class="cert-tags">
+              <span>Ethical Hacking</span>
+              <span>Footprinting</span>
+              <span>Enumeration</span>
+            </div>
+          </div>
+          <div class="cert-status completed"><i class="fas fa-check-circle"></i> Completed</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// contact</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Open to internship opportunities, collaborations, and cybersecurity discussions.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">Email</span>
+              <a href="mailto:tonnyt78670194@gmail.com" class="contact-value">tonnyt78670194@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/tonnylabs" target="_blank" class="contact-value">github.com/tonnylabs</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/tonny-ochieng-13a1903ab?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-value">linkedin.com/in/tonny-ochieng</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+254110933132" class="contact-value">+254 110 933 132</a>
+            </div>
+          </div>
+          <div class="contact-availability">
+            <div class="avail-dot"></div>
+            <span>Currently available for internship / attachment</span>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="form-success">
+              <i class="fas fa-check-circle"></i> Message sent successfully!
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="bracket">[</span>TONY<span class="bracket">]</span>
+          <p>Cyber Security Analyst</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certs</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="mailto:tonnyt78670194@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/tonnylabs" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/tonny-ochieng-13a1903ab?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="tel:+254110933132" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Tony – Cyber Security Portfolio</p>
+        <p class="footer-note"><span class="accent">// </span>Built with passion for security</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
