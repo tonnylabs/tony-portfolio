@@ -895,6 +895,14 @@ button { cursor: pointer; border: none; background: none; }
   color: var(--blue);
   display: flex; align-items: center; gap: 0.4rem;
 }
+.experience-dates {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+  display: flex; align-items: center; gap: 0.4rem;
+}
+.experience-dates i { color: var(--accent); }
 .experience-duration {
   color: var(--accent);
   border: 1px solid rgba(0,255,136,0.2);
