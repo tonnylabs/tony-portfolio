@@ -969,6 +969,8 @@ button { cursor: pointer; border: none; background: none; }
   line-height: 1.65;
 }
 
+.fiber-projects { background: var(--bg-primary); }
+
 /* ============================================================
    CONTACT SECTION
    ============================================================ */
