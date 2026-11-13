@@ -1,5 +1,5 @@
 /* ============================================================
-   TONY – CYBER SECURITY PORTFOLIO
+   TONNY – CYBER SECURITY PORTFOLIO
    Dark Cybersecurity Theme: Black / Dark Blue / Green Accents
    ============================================================ */
 
@@ -702,6 +702,14 @@ button { cursor: pointer; border: none; background: none; }
   font-size: 0.8rem;
   color: var(--text-muted);
 }
+.project-diagram {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.65rem;
+  background: #06111d;
+  border-bottom: 1px solid var(--border);
+}
 .project-overlay {
   position: absolute; top: 10px; left: 10px;
 }
@@ -743,6 +751,17 @@ button { cursor: pointer; border: none; background: none; }
   padding: 0.2rem 0.55rem;
   border-radius: 4px;
 }
+.project-report-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  transition: color var(--transition), transform var(--transition);
+}
+.project-report-link:hover { color: var(--text-primary); transform: translateX(3px); }
 
 .project-footer {
   padding: 0.75rem 1.25rem;
