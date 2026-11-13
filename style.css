@@ -844,6 +844,17 @@ button { cursor: pointer; border: none; background: none; }
   padding: 0.15rem 0.5rem;
   border-radius: 4px;
 }
+.credential-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  transition: color var(--transition), transform var(--transition);
+}
+.credential-download:hover { color: var(--text-primary); transform: translateX(3px); }
 .cert-status {
   position: absolute; top: 1rem; right: 1rem;
   font-family: var(--font-mono);
